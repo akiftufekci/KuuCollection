@@ -6,7 +6,6 @@ import MobileMenu from "./MobileMenu";
 import SearchBar from "./SearchBar";
 import CartIcon from "./CartIcon";
 import { currentUser } from "@clerk/nextjs/server";
-import { Sign } from "crypto";
 import { ClerkLoaded, SignedIn, SignInButton, UserButton } from "@clerk/nextjs";
 import { ListOrdered } from "lucide-react";
 import Link from "next/link";
@@ -15,7 +14,7 @@ const Header = async () => {
   const user = await currentUser();
   return (
     <header className="border-b border-b-gray-400 py-5">
-      <Container className="flex justify-between items-center gap-7 text-lightColor">
+      <Container className="flex justify-between items-center gap-6 text-lightColor">
         <HeaderMenu />
         <div className="w-auto md:w-1/3 flex items-center justify-center gap-2.5 ">
           <MobileMenu />

@@ -8,7 +8,7 @@ const HeaderMenu = () => {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <div className="hidden md:inline-flex gap-4 w-1/3 items-center text-sm capitalize font-semibold">
+    <div className="hidden md:inline-flex gap-3 w-1/3 items-center text-sm capitalize font-semibold">
       {headerData?.map((item) => (
         <Link
           key={item?.title}
