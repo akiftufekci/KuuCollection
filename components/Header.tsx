@@ -37,7 +37,7 @@ const Header = async () => {
             {!user && (
               <SignInButton mode="modal">
                 <button className="text-sm font-semibold hover:text-darkColor hoverEffect">
-                  Login
+                  Giriş Yap
                 </button>
               </SignInButton>
             )}
